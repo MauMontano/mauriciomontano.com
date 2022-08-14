@@ -1,0 +1,101 @@
+<app-nav [navColor]=1></app-nav>
+<div class="bg-black py-10 px-10 md:px-14 md:py-20 lg:px-20 lg:py-20">
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-1 lg:grid-cols-2">
+        <div>
+            <div class="flex justify-center items-start">
+                <img class="object-cover h-96 w-80" src="assets/img/aboutme.JPG" alt="">
+            </div>
+            <div class="flex flex-wrap gap-4 justify-center items-start mt-5">
+                <a href="https://github.com/MauMontano" target="_blank" class="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+                    <img class="w-10 h-10" src="assets/icons/github.png" alt="" title="">
+                </a>
+                <a href="https://www.linkedin.com/in/mauricio-montano-sanchez/" target="_blank" class="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+                    <img class="w-10 h-10" src="assets/icons/linkedin.png" alt="" title="">
+                </a>
+                <a href="https://www.instagram.com/_mau_mont/" target="_blank" class="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+                    <img class="w-10 h-10" src="assets/icons/instagram.png" alt="" title="">
+                </a>
+            </div>
+            <div class="flex gap-x-1 items-center justify-center mt-5">
+                <span class="material-icons w-12 max-w-12 text-4xl ng-star-inserted">
+                    mail
+                </span>
+                <div>
+                    <p class="underline">mauricio.montano.sanchez@gmail.com</p>
+                </div> 
+            </div>  
+        </div>
+        <div class="">
+            <p class="text-3xl font-extrabold">Contact me</p>
+            <form class="flex flex-col gap-8 mt-10"
+                    data-netlify="true"
+                    netlify-honeypot="honey"
+                    name="contact">
+                <!-- Name -->
+                <div class="flex flex-col form-field">
+                    <label for="name" class="">Name<sup>*</sup></label>
+                    <div class="input-form-wrapper">
+                        <input type="text" id="name"  name="name" class="input-form text-white" required placeholder="Type your name">
+                    </div>
+                    <!-- <p class="text-xs sm:text-sm font-medium text-red-600 py-1 px-0.5" *ngIf="formControls.name.invalid">{{getErrorMsg(formControls.name, 'name')}}</p> -->
+                </div>
+
+                <!-- Subject -->
+                <div class="flex flex-col form-field">
+                    <label for="subject" class="">Email<sup>*</sup></label>
+                    <div class="input-form-wrapper">
+                        <input type="text" id="subject"  name="subject" class="input-form" required placeholder="I'd like us to work together">
+                    </div>
+                    <!-- <p class="text-xs sm:text-sm font-medium text-red-600 py-1 px-0.5" *ngIf="formControls.subject.invalid">{{getErrorMsg(formControls.subject, 'subject')}}</p> -->
+                </div>
+
+                <!-- Reply to -->
+                <div class="flex flex-col form-field">
+                    <label for="reply-to" class="">Phone number</label>
+                    <div class="input-form-wrapper">
+                    <input type="email" id="reply-to"  name="reply-to" class="input-form" placeholder="email@example.com">
+                    </div>
+                    <!-- <p class="text-xs sm:text-sm font-medium text-red-600 py-1 px-0.5" *ngIf="formControls.replyTo.invalid">{{getErrorMsg(formControls.replyTo, 'replyTo')}}</p> -->
+                </div>
+
+                <!-- Reply to -->
+                <div class="flex flex-col form-field">
+                    <label for="reply-to" class="">Subject</label>
+                    <div class="input-form-wrapper">
+                    <input type="email" id="reply-to"  name="reply-to" class="input-form" placeholder="email@example.com">
+                    </div>
+                    <!-- <p class="text-xs sm:text-sm font-medium text-red-600 py-1 px-0.5" *ngIf="formControls.replyTo.invalid">{{getErrorMsg(formControls.replyTo, 'replyTo')}}</p> -->
+                </div>
+
+                <!-- Message -->
+                <div class="flex flex-col form-field">
+                    <label for="message" class="">Message<sup>*</sup></label>
+                    <div class="input-form-wrapper">
+                    <textarea id="message"  name="message" class="input-form" required placeholder="Hi, I saw your webpage and..."></textarea>
+                    </div>
+                    <!-- <p class="text-xs sm:text-sm font-medium text-red-600 py-1 px-0.5" *ngIf="formControls.message.invalid">{{getErrorMsg(formControls.message, 'message')}}</p> -->
+                </div>
+                
+                <div class="flex justify-center">
+                    <button class="bg-black border-2 border-white  hover:bg-white hover:text-black font-bold py-2 px-10 rounded-full" type="submit">
+                        Submit
+                    </button>
+                    <!-- <button type="submit" class="submit-btn">
+                        <div class="w-full flex justify-center">
+                            <svg class="animate-spin h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                            </svg>
+                        </div>
+                        <span>Submit</span>
+                    </button> -->
+                    <!-- <p class="text-center text-red-600 font-medium" *ngIf="formDataStatus === 'ERROR'">Sorry! There was an error, please report it. Details are in console</p>
+                    <p class="text-center text-green-600 font-medium" *ngIf="formDataStatus === 'SENT'">Your message was sent successfully</p> -->
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</div>
+<app-footer [footerColor]=1></app-footer>

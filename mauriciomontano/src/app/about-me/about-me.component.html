@@ -1,0 +1,49 @@
+<app-nav [navColor]=1></app-nav>
+<div class="bg-black py-10 px-10 md:px-14 md:py-20 lg:px-20 lg:py-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+        <div class="">
+            <p class="text-white">I am</p>
+            <p class="text-3xl text-white font-extrabold">Mauricio Montaño</p>
+            <p class="text-white mt-10">
+                A passionate madman about project management and a lover of the challenges 
+                that make me grow not just professionally but also as a person.
+            </p>
+            <p class="text-white mt-10">
+                If I had to choose a war cry that best describes me, it would be "Never back down".
+                I am faithful believer that you can achieve everything you purpose if you have the 
+                enough discipline and the courage that it takes.
+            </p>
+        </div>
+        <div class="mt-10 md:mt-10 lg:mt-0">
+            <!-- <img class="object-cover h-80 w-80" src="assets/img/aboutme.JPG" alt=""> -->
+            <swiper [loop]="true" [autoplay]="{ delay: 1000, disableOnInteraction: false }" [slidesPerView]="1">
+                <ng-template data-swiper-autoplay="2000" class="swiper-slide" swiperSlide>
+                    <div class="flex justify-end items-center gap-2">
+                        <img class="object-cover h-96 w-full md:w-3/4 lg:2/3" src="assets/img/consulting.jpg" alt="">
+                    </div>
+                </ng-template>
+                <ng-template data-swiper-autoplay="2000" class="swiper-slide" swiperSlide>
+                    <div class="flex justify-end items-center gap-2">
+                        <img class="object-cover h-96 w-full md:w-3/4 lg:2/3" src="assets/img/me1.jpg" alt="">
+                    </div>
+                </ng-template>
+                <ng-template data-swiper-autoplay="2000" class="swiper-slide" swiperSlide>
+                    <div class="flex justify-end items-center gap-2">
+                        <img class="object-cover h-96 w-full md:w-3/4 lg:2/3" src="assets/img/me3.jpg" alt="">
+                    </div>
+                </ng-template>
+            </swiper>
+        </div>
+    </div>
+    <div class="mt-10">
+        <p class="text-3xl text-white text-center font-extrabold">My hobbies</p>
+        <div class="flex justify-center items-center">
+            <div class="mt-10 w-full grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+                <div *ngFor="let hobbie of hobbies" class="flex justify-center items-center h-80 w-full bg-cover bg-no-repeat bg-center" style="background-image: url('assets/img/{{hobbie.img}}');">
+                    <p class="text-xl text-white text-center font-extrabold uppercase transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">{{hobbie.name}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer [footerColor]=1></app-footer>
