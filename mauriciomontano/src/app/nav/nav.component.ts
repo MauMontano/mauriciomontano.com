@@ -9,6 +9,7 @@ export class NavComponent implements OnInit {
   
   @Input()
   navColor: number = 0;
+  responsiveNav: boolean = false;
   
   constructor() { }
 
@@ -18,6 +19,10 @@ export class NavComponent implements OnInit {
 
   public changeNavColor(colorCode: number): void{
     this.navColor = colorCode;
+  }
+
+  public openResponsiveNav(): void {
+    this.responsiveNav = !this.responsiveNav;
   }
 
 }
