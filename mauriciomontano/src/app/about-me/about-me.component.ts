@@ -34,13 +34,31 @@ SwiperCore.use([
 })
 export class AboutMeComponent implements OnInit {
   public hobbies: Hobbies[];
+  public values: Values[];
+  public interests: Interests[];
   
   constructor() {
     this.hobbies = [
-      { name: "GYM", img: "gym.webp" },
+      { name: "GYM", img: "gym.png" },
       { name: "Dancing", img: "dancing.jpeg" },
       { name: "Reading", img: "reading.webp" },
-      { name: "Image consulting", img: "aboutme.JPG" },
+      { name: "Image consulting", img: "consulting.jpg" },
+    ];
+    this.values = [
+      { name: "Respect", img: "respect.jpg" },
+      { name: "Responsability", img: "responsability.webp" },
+      { name: "Humbleness", img: "humble.jpeg" },
+      { name: "Solidarity", img: "solidarity.jpg" },
+    ];
+    this.interests = [
+      { name: "entrepreneurship", img: "business.jpg" },
+      { name: "Startups", img: "startups.jpg" },
+      { name: "Artificial Intelligence", img: "ai.jpg" },
+      { name: "Data Science", img: "dataScience.jpg" },
+      { name: "E-Commerce", img: "e-commerce.jpg" },
+      { name: "Social Media", img: "socialMedia.jpg" },
+      { name: "Men's Fashion", img: "aboutme2.jpg" },
+      { name: "Boxing", img: "boxing.png" },
     ];
   }
 
@@ -50,6 +68,16 @@ export class AboutMeComponent implements OnInit {
 }
 
 interface Hobbies {
+  name: string;
+  img: string;
+}
+
+interface Values {
+  name: string;
+  img: string;
+}
+
+interface Interests {
   name: string;
   img: string;
 }

@@ -9,13 +9,13 @@ import { ContactComponent } from './contact/contact.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/main', pathMatch: 'full' },
-  { path: 'main', component: MainComponent },
-  { path: 'aboutme', component: AboutMeComponent },
-  { path: 'portafolio', component: PortafolioComponent },
-  { path: 'education', component: EducationComponent },
-  { path: 'skills', component: SkillsComponent },
-  { path: 'contact', component: ContactComponent }
+  { path: '', redirectTo: '/main', pathMatch: 'full', data: { animationState: 'Main' } },
+  { path: 'main', component: MainComponent, data: { animationState: 'Main' } },
+  { path: 'aboutme', component: AboutMeComponent, data: { animationState: 'Aboutme' } },
+  { path: 'portafolio', component: PortafolioComponent, data: { animationState: 'Portafolio' } },
+  { path: 'education', component: EducationComponent, data: { animationState: 'Education' } },
+  { path: 'skills', component: SkillsComponent, data: { animationState: 'Skills' } },
+  { path: 'contact', component: ContactComponent, data: { animationState: 'Contact' } }
 ];
 
 @NgModule({
