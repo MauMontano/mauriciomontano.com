@@ -2,16 +2,19 @@
 <div class="bg-black py-10 px-10 md:px-14 md:py-20 lg:px-20 lg:py-20">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
         <div class="">
-            <p class="text-white">I am</p>
-            <p class="text-3xl text-white font-extrabold">Mauricio Montaño</p>
-            <p class="text-white mt-10">
-                A passionate madman about project management and a lover of the challenges 
+            <p class="">I am</p>
+            <p class="text-3xl  font-extrabold tittleText">Mauricio Montaño</p>
+            <p class=" mt-10 tittleText">
+                A passionate madman and a lover of the challenges 
                 that make me grow not just professionally but also as a person.
             </p>
-            <p class="text-white mt-10">
-                If I had to choose a war cry that best describes me, it would be "Never back down".
+            <p class="mt-10">
+                If I had to choose a <span class="font-bold">WAR CRY</span> that best describes me, it would be <span class="font-bold underline">"Never back down"</span>.
                 I am faithful believer that you can achieve everything you purpose if you have the 
                 enough discipline and the courage that it takes.
+            </p>
+            <p class="mt-10 text-2xl font-medium text-center stylishText">
+                Mauricio Montaño
             </p>
         </div>
         <div class="mt-10 md:mt-10 lg:mt-0">
@@ -36,31 +39,40 @@
         </div>
     </div>
     <div class="mt-10">
-        <p class="text-3xl text-white text-center font-extrabold">My hobbies</p>
+        <p class="text-3xl  text-center font-extrabold">My Hobbies</p>
+        <p class="text-center mt-5 tittleText">
+            I have a lot of hobbies, but the main are the following:
+        </p>
         <div class="flex justify-center items-center">
-            <div class="mt-10 w-full grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+            <div class="mt-8 w-full grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
                 <div *ngFor="let hobbie of hobbies" class="flex justify-center items-center h-80 w-full bg-cover bg-no-repeat bg-center" style="background-image: url('assets/img/{{hobbie.img}}');">
-                    <p class="text-xl text-white text-center font-extrabold uppercase transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">{{hobbie.name}}</p>
+                    <p class="techText uppercase text-xl text-center font-extrabold transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-black duration-300">{{hobbie.name}}</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="mt-10">
-        <p class="text-3xl text-white text-center font-extrabold">My values</p>
+        <p class="text-3xl  text-center font-extrabold">My Principles</p>
+        <p class="text-center mt-5 tittleText">
+            The principles that guide my life are the following:
+        </p>
         <div class="flex justify-center items-center">
-            <div class="mt-10 w-full grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
-                <div *ngFor="let value of values" class="flex justify-center items-center h-80 w-full bg-cover bg-no-repeat bg-center bg-purple" style="background-image: url('assets/img/{{value.img}}');">
-                    <p class="text-xl text-white text-center font-extrabold uppercase transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">{{value.name}}</p>
+            <div class="mt-8 w-full grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+                <div *ngFor="let value of values" class="flex justify-center items-center h-80 w-full bg-cover bg-no-repeat bg-center bg-black" style="background-image: url('assets/img/{{value.img}}');">
+                    <p class="techText text-xl  text-center font-extrabold uppercase transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-black duration-300">{{value.name}}</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="mt-10">
-        <p class="text-3xl text-white text-center font-extrabold">Other interests</p>
+        <p class="text-3xl text-center font-extrabold">Other interests</p>
+        <p class="text-center mt-5 tittleText">
+            I'd like to explore and learn more about the next fields:
+        </p>
         <div class="flex justify-center items-center">
-            <div class="mt-10 w-full grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
-                <div *ngFor="let interest of interests" class="flex justify-center items-center h-40 w-full bg-cover bg-no-repeat bg-center bg-purple" style="background-image: url('assets/img/{{interest.img}}');">
-                    <p class="text-xl text-white text-center font-extrabold uppercase transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">{{interest.name}}</p>
+            <div class="mt-8 w-full grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+                <div *ngFor="let interest of interests" class="flex justify-center items-center h-40 w-full bg-cover bg-no-repeat bg-center bg-black" style="background-image: url('assets/img/{{interest.img}}');">
+                    <p class="techText text-xl  text-center font-extrabold uppercase transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-black duration-300">{{interest.name}}</p>
                 </div>
             </div>
         </div>

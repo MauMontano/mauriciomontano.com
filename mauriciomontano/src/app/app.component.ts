@@ -13,7 +13,6 @@ export class AppComponent {
   title = 'maumontano';
 
   prepareRoute(outlet: RouterOutlet): boolean {
-    console.log(outlet);
 		return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animationState'];
 	}
 

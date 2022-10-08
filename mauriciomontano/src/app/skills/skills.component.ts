@@ -20,6 +20,9 @@ export class SkillsComponent implements OnInit {
       { name: "Agile Project Management", icon: "restart_alt", description: "Individuals and interactions over processes and tools, working software over comprehensive documentation..." }
     ];
     this.techSkills  = [
+        { name: "Jira", icon: "jira.png", description: "It is a platform to track projects", url: "https://www.atlassian.com/es/software/jira" },
+        { name: "Confluence", icon: "confluence.png", description: "It is a team workspace where knowledge and collaboration meet", url: "https://www.atlassian.com/es/software/confluence" },
+        { name: "Slack", icon: "slack.png", description: "It is a team communication tool", url: "https://slack.com/" },
         { name: "YouTrack", icon: "youTrack.png", description: "It is a platform to track projects", url: "https://www.jetbrains.com/es-es/youtrack/" },
         { name: "Monday", icon: "monday.png", description: "It is a platform to track projects", url: "https://monday.com/lang/es" },
         { name: "Git", icon: "git.png", description: "It is platform to control the version of a project", url: "https://git-scm.com/" },
