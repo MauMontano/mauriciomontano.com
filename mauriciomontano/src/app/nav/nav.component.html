@@ -28,17 +28,17 @@
 			</ul>
 		</div>
 		<div *ngIf="responsiveNav" class="bg-black z-40 fixed w-screen h-screen left-0 top-0 flex justify-center items-between md:hidden md:w-auto" id="mobile-menu-responsive">
-			<button type="button" (click)="openResponsiveNav()" class="absolute fixed top-8 right-8" aria-controls="mobile-menu-2" aria-expanded="false">
+			<button type="button" (click)="openResponsiveNav()" class="absolute fixed top-8 right-4" aria-controls="mobile-menu-2" aria-expanded="false">
 				<span class="material-icons w-8 max-w-8 text-3xl ng-star-inserted">
 					close
 				</span>
 			</button>
-			<ul class="flex flex-col justify-between text-center p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm">
+			<ul class="flex flex-col justify-center items-center text-center gap-6 p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm">
 				<li>
 					<a class="text-silver text-sm hover:text-white hover:line-through uppercase" routerLink="/aboutme" routerLinkActive="active-link" (click)="changeNavColor(1)">More about me</a>
 				</li>
 				<li>
-					<a class="text-silver text-sm hover:text-white hover:line-through uppercase" routerLink="/portafolio" routerLinkActive="active-link" (click)="changeNavColor(1)">Portafolio</a>
+					<a class="text-silver text-sm hover:text-white hover:line-through uppercase" routerLink="/portafolio" routerLinkActive="active-link" (click)="changeNavColor(1)">Portfolio</a>
 				</li>
 				<li>
 					<a class="text-silver text-sm hover:text-white hover:line-through uppercase" routerLink="/education" routerLinkActive="active-link" (click)="changeNavColor(0)">Education</a>
