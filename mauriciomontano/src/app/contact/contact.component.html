@@ -22,7 +22,7 @@
                         mail
                     </span>
                     <div>
-                        <p class="underline">mauricio.montano.sanchez@gmail.com</p>
+                        <p class="underline">contact@mauriciomontano.com</p>
                     </div> 
                 </div>  
             </div>
@@ -92,11 +92,11 @@
                         <span >Submit</span>
                     </button>
                 </div>
-                <div *ngIf="formDataStatus === 'ERROR'">
-                    <p class="text-center text-red-600 font-medium">Sorry! There was an error, please report it. Details are in console</p>
-                </div>
                 <div *ngIf="formDataStatus === 'SENT'">
                     <p class="text-center text-green-600 font-medium">Your message was sent successfully</p>
+                </div>
+                <div *ngIf="formDataStatus === 'ERROR'">
+                    <p class="text-center text-red-600 font-medium">Sorry! There was an error, please report it. Details are in console</p>
                 </div>
             </form>
         </div>
