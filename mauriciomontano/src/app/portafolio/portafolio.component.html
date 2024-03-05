@@ -2,7 +2,344 @@
 <main class="flex flex-col w-full min-h-screen justify-between">
     <div class="flex-grow flex-shrink-0 py-10 px-10 md:px-14 md:py-20 lg:px-10 lg:py-10 bg-black">
         <swiper [navigation]="true" [pagination]="true" class="mySwiper">
-            <ng-template swiperSlide #kobd>
+          <ng-template swiperSlide #tmate>
+            <div class="flex justify-center items-start md:px-20">
+                <div class="grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-2">
+                    <div class="flex justify-center items-center">
+                        <swiper [loop]="true" [autoplay]="{ delay: 1000, disableOnInteraction: false }" [slidesPerView]="1" class="h-64 md:h-96 w-full">
+                            <ng-template data-swiper-autoplay="2000" swiperSlide>
+                                <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/tmate1.png');">
+                                </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000" swiperSlide>
+                                <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/tmate2.png');">
+                                </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000" swiperSlide>
+                                <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/tmate3.png');">
+                                </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000" swiperSlide>
+                                <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/tmate4.png');">
+                                </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000" swiperSlide>
+                                <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/tmate5.png');">
+                                </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                                <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/tmate7.png');">
+                                </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                              <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/tmate8.png');">
+                              </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                              <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/tmate9.png');">
+                              </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                              <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/tmate10.png');">
+                              </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                              <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/tmate11.png');">
+
+                              </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                              <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/tmate15.png');">
+                              </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                              <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/tmate17.png');">
+                              </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                              <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/tmate18.png');">
+                              </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                              <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/tmate19.png');">
+                              </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                              <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/tmate12.png');">
+                              </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                              <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/tmate13.png');">
+                              </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                              <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/tmate14.png');">
+                              </div>
+                            </ng-template>
+                        </swiper>
+                    </div>
+                    <div class="">
+                        <p class="text-white">Jul 2023 - Dic 2023</p>
+                        <a href="https://kobd.io/home" target="_blank" class="hover:underline">
+                            <p class="text-3xl text-white font-extrabold uppercase">Tutor Mate</p>
+                        </a>
+                        <p class="text-md mt-4">
+                          Tutormate is my Engineering Degree Project. It consists of a support web application for student-tutor pairing between ESCOM students, which uses an algorithm based on cellular automatas to match students, designed by my team and me, and which implements various data mining techniques to obtain  association rules to help administrative staff make better academic decisions.
+                        </p>
+                        <p class="text-md mt-4">
+                          I've developed myself here as a Full Stack Developer and Project Manager
+                          doing activities as the following:
+                        </p>
+                        <ul class="list-disc m-5">
+                            <li>Architecture Design (Microservices)</li>
+                            <li>Developing of multiple microservices (Users, Tutorships, Data Analysis) with technologies such as:
+                              NodeJS, PostgreSQL, MongoDB, GraphQL, Docker, Nginx, Python, Google Cloud Platform, etc.
+                            </li>
+                            <li>Project Management with SCRUM</li>
+                            <li>Project Tracking with JIRA</li>
+                            <li>Elevator Pitch creation</li>
+                            <!-- ... -->
+                        </ul>
+                        <div class="flex flex-wrap gap-2">
+                          <a href="https://nodejs.org/" target="_blank">
+                            <img class="w-12 h-12" src="assets/icons/nestjs.svg" alt="" title="">
+                          </a>
+                          <a href="https://nodejs.org/" target="_blank">
+                              <img class="w-12 h-12" src="assets/icons/nodejs.png" alt="" title="">
+                          </a>
+                          <a href="https://www.postgresql.org/" target="_blank">
+                              <img class="w-12 h-12" src="assets/icons/postgre.png" alt="" title="">
+                          </a>
+                          <a href="https://www.mongodb.com/" target="_blank">
+                              <img class="w-12 h-12" src="assets/icons/mongodb.png" alt="" title="">
+                          </a>
+                          <a href="https://www.docker.com/" target="_blank">
+                              <img class="w-12 h-12" src="assets/icons/docker.png" alt="" title="">
+                          </a>
+                          <a href="https://www.nginx.com/" target="_blank">
+                              <img class="w-12 h-12" src="assets/icons/nginx.png" alt="" title="">
+                          </a>
+                          <a href="https://www.nginx.com/" target="_blank">
+                            <img class="w-12 h-12" src="assets/icons/gcp.png" alt="" title="">
+                          </a>
+                          <a href="https://www.nginx.com/" target="_blank">
+                            <img class="w-12 h-12" src="assets/icons/python.webp" alt="" title="">
+                          </a>
+                          <a href="https://www.jetbrains.com/es-es/youtrack/" target="_blank">
+                              <img class="w-12 h-12" src="assets/icons/jira.png" alt="" title="">
+                          </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </ng-template>
+          <ng-template swiperSlide #nba>
+            <div class="flex justify-center items-start md:px-20">
+                <div class="grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-2">
+                    <div class="flex justify-center items-center">
+                        <swiper [loop]="true" [autoplay]="{ delay: 1000, disableOnInteraction: false }" [slidesPerView]="1" class="h-64 md:h-96 w-full">
+                            <ng-template data-swiper-autoplay="2000" swiperSlide>
+                                <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/nba2.png');">
+                                </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000" swiperSlide>
+                                <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/nba1.png');">
+                                </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000" swiperSlide>
+                                <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/nba3.png');">
+                                </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000" swiperSlide>
+                                <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/nba4.png');">
+                                </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000" swiperSlide>
+                                <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/nba5.png');">
+                                </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                                <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/nba6.png');">
+                                </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                              <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/nba7.png');">
+                              </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                              <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/nba8.png');">
+                              </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                              <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/nba9.png');">
+                              </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                              <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/nba10.png');">
+                              </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                              <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/nba11.png');">
+                              </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                              <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/nba12.png');">
+                              </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                              <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/nba13.png');">
+                              </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                              <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/nba14.png');">
+                              </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                              <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/nba15.png');">
+                              </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                              <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/nba16.png');">
+                              </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                              <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/nba18.png');">
+                              </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                              <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/nba19.png');">
+                              </div>
+                            </ng-template>
+                        </swiper>
+                    </div>
+                    <div class="">
+                        <p class="text-white">Jul 2023 - Dic 2023</p>
+                        <a href="https://kobd.io/home" target="_blank" class="hover:underline">
+                            <p class="text-3xl text-white font-extrabold uppercase">NBA DATA ANALYSYS</p>
+                        </a>
+                        <p class="text-md mt-4">
+                          NBA Data Analisys is a project with the purpose of collecting NBA data from
+                          different sources to analyze it and classify players according to
+                          their attributes and predict if a player will have a low (lower 20%),
+                          medium or high salary (top 20%).
+                        </p>
+                        <p class="text-md mt-4">
+                          As the activities that I developed here are the following:
+                        </p>
+                        <ul class="list-disc m-5">
+                          <li>Statistical Description of the Data</li>
+                          <li>Data Preprocessing (Dara Cleaning, Data Integration, Data Reduction, Data Transformation, Data Discretization)</li>
+                          <li>Data Warehousing and Online Analytical Processing:
+                            Data Cube design and creation according to different data models and
+                            algorithms to a efficient creation.
+                            Data Cube Reduction according to different computation methods
+                            and algorithms.
+                          </li>
+                          <li>
+                            Data Mining
+                            <ul>
+                              <li>Mining Frequent Patterns</li>
+                              <li>Association Rules</li>
+                              <li>Classification</li>
+                              <li>Clustering</li>
+                            </ul>
+                          </li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </ng-template>
+          <ng-template swiperSlide #cancer>
+            <div class="flex justify-center items-start md:px-20">
+                <div class="grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-2">
+                    <div class="flex justify-center items-center">
+                        <swiper [loop]="true" [autoplay]="{ delay: 1000, disableOnInteraction: false }" [slidesPerView]="1" class="h-64 md:h-96 w-full">
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                                <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/cancer3.png');">
+                                </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                              <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/cancer2.png');">
+                              </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                              <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/cancer1.png');">
+                              </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                              <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/cancer4.png');">
+                              </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                              <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/cancer5.png');">
+                              </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                              <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/cancer6.png');">
+                              </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                              <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/cancer7.png');">
+                              </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                              <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/cancer8.png');">
+                              </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                              <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/cancer9.png');">
+                              </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                              <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/cancer10.png');">
+                              </div>
+                            </ng-template>
+                            <ng-template data-swiper-autoplay="2000"swiperSlide>
+                              <div class="w-full h-full bg-cover bg-center flex justify-center items-center" style="background-image: url('assets/img/cancer11.png');">
+                              </div>
+                            </ng-template>
+                        </swiper>
+                    </div>
+                    <div class="">
+                        <p class="text-white">Jul 2023 - Dic 2023</p>
+                        <a href="https://kobd.io/home" target="_blank" class="hover:underline">
+                            <p class="text-3xl text-white font-extrabold uppercase">BREAST CANCER DETECTION ANALYSYS</p>
+                        </a>
+                        <p class="text-md mt-4">
+                          This study presents a comparison of 3 machine learning algorithms:
+                          Multilayer Neural Network (MLP), Nearest Neighbor Search (KNN),
+                          and Support Vector Machines (SVM) on the Wisconsin Breast Cancer
+                          Diagnosis dataset (WDBC), measuring its accuracy in classification tests.
+                          The aforementioned data set consists of features that were calculated
+                          from digitized images of fine needle aspiration (FNA) tests on
+                          different breast masses. For the implementation of the machine
+                          learning algorithms, the data set was divided as follows:
+                          80% for the training phase and 20% for the testing phase.
+                        </p>
+                        <p class="text-md mt-4">
+                          To create the data set, Dr. Wolberg used fine needle aspiration (FNA)
+                          of patients with solid breast masses and an easy-to-use graphical
+                          software program called Xcyt[11], which is capable of performing
+                          feature analysis. cytological based on a digital scan.
+                        </p>
+                        <p class="text-md mt-4">
+                          The program uses a curve fitting algorithm to calculate
+                          ten characteristics of each of the sample cells: (1) radius,
+                          (2) texture, (3) perimeter, (4) area, (5) smoothness, (6) compactness,
+                          (7) concavity, (8) concave points, (9) symmetry and (10)
+                          fractal dimension. It then calculates the mean value,
+                          extreme value (mean of the three largest values), and standard
+                          error of each feature for the image, returning a vector of 30 real values.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </ng-template>
+          <ng-template swiperSlide #kobd>
                 <div class="flex justify-center items-start md:px-20">
                     <div class="grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-2">
                         <div class="flex justify-center items-center">
@@ -57,14 +394,14 @@
                                 <p class="text-3xl text-white font-extrabold uppercase">K.O. BOXING DATA</p>
                             </a>
                             <p class="text-md mt-4">
-                                KOBD is a startup whose mission is to provide to the users data analysis,
-                                statistical information and historical information about boxing,  reliable,
-                                attractive and with the best quality in an interactive way and providing a
-                                unique experience.
+                              KOBD is a startup whose mission is to provide to the users data analysis,
+                              statistical information and historical information about boxing,  reliable,
+                              attractive and with the best quality in an interactive way and providing a
+                              unique experience.
                             </p>
                             <p class="text-md mt-4">
-                                I've developed myself here as a cofounder, project manager and frontend developer
-                                doing activities as the following:
+                              I've developed myself here as a cofounder, project manager and frontend developer
+                              doing activities as the following:
                             </p>
                             <ul class="list-disc m-5">
                                 <li>Business plan creation</li>
@@ -76,30 +413,30 @@
                                 <!-- ... -->
                             </ul>
                             <div class="flex flex-wrap gap-2">
-                                <a href="https://angular.io/" target="_blank">
-                                    <img class="w-12 h-12" src="assets/icons/angular.png" alt="" title="">
-                                </a>
-                                <a href="https://nodejs.org/" target="_blank">
-                                    <img class="w-12 h-12" src="assets/icons/nodejs.png" alt="" title="">
-                                </a>
-                                <a href="https://www.postgresql.org/" target="_blank">
-                                    <img class="w-12 h-12" src="assets/icons/postgre.png" alt="" title="">
-                                </a>
-                                <a href="https://www.mongodb.com/" target="_blank">
-                                    <img class="w-12 h-12" src="assets/icons/mongodb.png" alt="" title="">
-                                </a>
-                                <a href="https://graphql.org/" target="_blank">
-                                    <img class="w-12 h-12" src="assets/icons/graphql.png" alt="" title="">
-                                </a>
-                                <a href="https://www.docker.com/" target="_blank">
-                                    <img class="w-12 h-12" src="assets/icons/docker.png" alt="" title="">
-                                </a>
-                                <a href="https://www.nginx.com/" target="_blank">
-                                    <img class="w-12 h-12" src="assets/icons/nginx.png" alt="" title="">
-                                </a>
-                                <a href="https://www.jetbrains.com/es-es/youtrack/" target="_blank">
-                                    <img class="w-12 h-12" src="assets/icons/youTrack.png" alt="" title="">
-                                </a>
+                              <a href="https://angular.io/" target="_blank">
+                                  <img class="w-12 h-12" src="assets/icons/angular.png" alt="" title="">
+                              </a>
+                              <a href="https://nodejs.org/" target="_blank">
+                                  <img class="w-12 h-12" src="assets/icons/nodejs.png" alt="" title="">
+                              </a>
+                              <a href="https://www.postgresql.org/" target="_blank">
+                                  <img class="w-12 h-12" src="assets/icons/postgre.png" alt="" title="">
+                              </a>
+                              <a href="https://www.mongodb.com/" target="_blank">
+                                  <img class="w-12 h-12" src="assets/icons/mongodb.png" alt="" title="">
+                              </a>
+                              <a href="https://graphql.org/" target="_blank">
+                                  <img class="w-12 h-12" src="assets/icons/graphql.png" alt="" title="">
+                              </a>
+                              <a href="https://www.docker.com/" target="_blank">
+                                  <img class="w-12 h-12" src="assets/icons/docker.png" alt="" title="">
+                              </a>
+                              <a href="https://www.nginx.com/" target="_blank">
+                                  <img class="w-12 h-12" src="assets/icons/nginx.png" alt="" title="">
+                              </a>
+                              <a href="https://www.jetbrains.com/es-es/youtrack/" target="_blank">
+                                  <img class="w-12 h-12" src="assets/icons/youTrack.png" alt="" title="">
+                              </a>
                             </div>
                         </div>
                     </div>
